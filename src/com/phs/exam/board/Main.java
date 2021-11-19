@@ -5,7 +5,7 @@ package com.phs.exam.board;
 * [x]시작 알림 메세지 출력
 * [x]명령어 입력
 * [x]exit가 입력될 떄 까지 명령어 계속 입력받기
-* [ ]새 게시물 입력받기 기능 구현
+* [x]새 게시물 입력받기 기능 구현
 * [ ]등록시마다 게시물번호가 증가하도록
 * [ ]입력받은 게시물 정보를 Article 객체에 저장 후 객체변수 출력
 * [ ]toString 메서드를 오버라이드 하여, 객체를 쉽게 디버깅 하기
@@ -32,10 +32,17 @@ public class Main {
     while(true){
 
 
-      System.out.printf("명령 : ) ");
+      System.out.printf("명령 ) ");
       String cmd = sc.nextLine();
       if(cmd.equals("exit")){
         break;
+      }else if(cmd.equals("/usr/article/write")){
+
+        System.out.println("- 새 게시물 -");
+        System.out.printf("제목 : ");
+        String title = sc.nextLine();
+        System.out.printf("내용 : ");
+        String body = sc.nextLine();
       }
 
 
