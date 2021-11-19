@@ -31,5 +31,6 @@ public class Main {
     System.out.printf("명령 : ) ");
     String od = sc.nextLine();
     System.out.println("== 프로그램 종료 ==");
+    System.out.println("== 프로그램 종료 ==");
   }
 }
